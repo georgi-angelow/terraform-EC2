@@ -53,6 +53,14 @@ resource "aws_security_group" "allow_inbound_http" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+    description = "SSH access"
+  }
 }
 
 # Create a new security group that allows outbound traffic

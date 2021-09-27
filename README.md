@@ -14,4 +14,5 @@
 
 Steps:
 1. Change variables in variables.tf
+2. Change public key in ec2.tf
 2. You need to have profile setuped in ~/.aws/credentials
